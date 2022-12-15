@@ -3,7 +3,7 @@ from helpers import random_koala_fact
 __winc_id__ = "c0dc6e00dfac46aab88296601c32669f"
 __human_name__ = "while"
 
-list = random_koala_fact()
+list = [random_koala_fact()]
 
 
 def unique_koala_facts(nr):
@@ -20,4 +20,4 @@ if __name__ == "__main__":
 
 print('Funny characteristics:', list)
 
-print('unique characteristic', unique_koala_facts(5))
+print('unique characteristic', unique_koala_facts(1))
