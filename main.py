@@ -3,8 +3,7 @@ from helpers import random_koala_fact
 __winc_id__ = "c0dc6e00dfac46aab88296601c32669f"
 __human_name__ = "while"
 
-
-list = [random_koala_fact()]
+# First Part
 
 
 def unique_koala_facts(nr):
@@ -16,6 +15,8 @@ def unique_koala_facts(nr):
         i -= 1
         my_list.append(list[i])
     return my_list
+
+# Second Part
 
 
 def num_joey_facts():
@@ -31,6 +32,7 @@ def num_joey_facts():
 # This block is only executed if this script is run directly (python main.py)
 # It is not run if you import this file as a module.
 if __name__ == "__main__":
+    list = [random_koala_fact()]
     print('lets see:', random_koala_fact())
 
 print('Funny characteristics:', list)
