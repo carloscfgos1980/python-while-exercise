@@ -5,13 +5,24 @@ __human_name__ = "while"
 
 
 list = [random_koala_fact()]
-i = 0
-while i < len(list):
-    print(list[i])
-    i = i + 1
+
+
+def unique_koala_facts(nr):
+    my_list = []
+    i = len(list)
+    while i > 0:
+        if (i == nr):
+            break
+        i -= 1
+        my_list.append(list[i])
+    return my_list
+
+
 # This block is only executed if this script is run directly (python main.py)
 # It is not run if you import this file as a module.
 if __name__ == "__main__":
     print('lets see:', random_koala_fact())
 
 print('Funny characteristics:', list)
+
+print('unique koala facts\n', unique_koala_facts(2))
