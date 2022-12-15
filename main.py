@@ -18,6 +18,16 @@ def unique_koala_facts(nr):
     return my_list
 
 
+def num_joey_facts():
+    count = ''
+    if 'joey' in list:
+        i = len(list)
+        while i > 0:
+            i -= 1
+            count += i
+            print(count)
+
+
 # This block is only executed if this script is run directly (python main.py)
 # It is not run if you import this file as a module.
 if __name__ == "__main__":
@@ -26,3 +36,5 @@ if __name__ == "__main__":
 print('Funny characteristics:', list)
 
 print('unique koala facts\n', unique_koala_facts(2))
+
+print('count:\n', num_joey_facts())
